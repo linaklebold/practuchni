@@ -32,34 +32,36 @@ namespace OknoCina
             double height = Convert.ToDouble(textBoxHeight.Text);
 
 
-            if ((bool)radioButtonOneCam.IsChecked && comboBoxMaterial.SelectedIndex == 0)
+            if ((bool)radioButtonOneCam.IsChecked)
             {
-                price = Math.Pow(width * 0.25, 2) + Math.Pow(height * 0.25, 2);
+                if (comboBoxMaterial.SelectedIndex == 0)
+                {
+                    price = Math.Pow(width * 0.25, 2) + Math.Pow(height * 0.25, 2);
+                }
+                if (comboBoxMaterial.SelectedIndex == 1)
+                {
+                    price = Math.Pow(width * 0.05, 2) + Math.Pow(height * 0.05, 2);
+                }
+                if (comboBoxMaterial.SelectedIndex == 2)
+                {
+                    price = Math.Pow(width * 0.15, 2) + Math.Pow(height * 0.15, 2);
+                }
             }
 
-            if ((bool)radioButtonOneCam.IsChecked && comboBoxMaterial.SelectedIndex == 1)
+            if ((bool)radioButtonTwoCam.IsChecked)
             {
-                price = Math.Pow(width * 0.05, 2) + Math.Pow(height * 0.05, 2);
-            }
-
-            if ((bool)radioButtonOneCam.IsChecked && comboBoxMaterial.SelectedIndex == 2)
-            {
-                price = Math.Pow(width * 0.15, 2) + Math.Pow(height * 0.15, 2);
-            }
-
-            if ((bool)radioButtonTwoCam.IsChecked && comboBoxMaterial.SelectedIndex == 0)
-            {
-                price = Math.Pow(width * 0.3, 2) + Math.Pow(height * 0.3, 2);
-            }
-
-            if ((bool)radioButtonTwoCam.IsChecked && comboBoxMaterial.SelectedIndex == 1)
-            {
-                price = Math.Pow(width * 0.1, 2) + Math.Pow(height * 0.1, 2);
-            }
-
-            if ((bool)radioButtonTwoCam.IsChecked && comboBoxMaterial.SelectedIndex == 2)
-            {
-                price = Math.Pow(width * 0.2, 2) + Math.Pow(height * 0.2, 2);
+                if (comboBoxMaterial.SelectedIndex == 0)
+                {
+                    price = Math.Pow(width * 0.3, 2) + Math.Pow(height * 0.3, 2);
+                }
+                if (comboBoxMaterial.SelectedIndex == 1)
+                {
+                    price = Math.Pow(width * 0.1, 2) + Math.Pow(height * 0.1, 2);
+                }
+                if (comboBoxMaterial.SelectedIndex == 2)
+                {
+                    price = Math.Pow(width * 0.2, 2) + Math.Pow(height * 0.2, 2);
+                }
             }
 
             if ((bool)checkBoxWindowsill.IsChecked)
