@@ -1,0 +1,38 @@
+﻿<Window x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="Демонстрація роботи з регулярними виразами" Height="402.615" Width="461.368">
+    <Grid>
+        <Label Content="Демонстрація роботи" FontSize="40" HorizontalAlignment="Left" Margin="23,20,0,0" VerticalAlignment="Top"/>
+        <Label Content="з регулярними виразами" FontSize="30" HorizontalAlignment="Left" Margin="56,83,0,0" VerticalAlignment="Top"/>
+        <Label Content="Номер телефону:" HorizontalAlignment="Left" Margin="23,146,0,0" VerticalAlignment="Top"/>
+        <Label Content="Номер паспорта:" HorizontalAlignment="Left" Margin="23,177,0,0" VerticalAlignment="Top"/>
+        <Label Content="Число з інтервалу" HorizontalAlignment="Left" Margin="23,208,0,0" VerticalAlignment="Top"/>
+        <Label Content="[10311;89645]:" HorizontalAlignment="Left" Margin="48,220,0,0" VerticalAlignment="Top"/>
+        <Label Content="Українське ім'я" HorizontalAlignment="Left" Margin="34,251,0,0" VerticalAlignment="Top"/>
+        <Label Content="Введіть час:" HorizontalAlignment="Left" Margin="53,282,0,0" VerticalAlignment="Top"/>
+        <Label Content="E-maiil:" HorizontalAlignment="Left" Margin="78,308,0,0" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Name="textBoxTel" Height="23" Margin="149,150,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox HorizontalAlignment="Left" Name="textBoxPass" Height="23" Margin="149,180,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox HorizontalAlignment="Left" Name="textBoxNum" Height="23" Margin="149,218,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox HorizontalAlignment="Left" Name="textBoxUkr" Height="23" Margin="149,254,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox HorizontalAlignment="Left" Name="textBoxTime" Height="23" Margin="149,284,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox HorizontalAlignment="Left" Name="textBoxEmail" Height="23" Margin="149,313,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Button Content="Перевірити" Name="buttonTel" Click="buttonTel_Click" HorizontalAlignment="Left" Margin="288,150,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button Content="Перевірити" Name="buttonPass" Click="buttonPass_Click" HorizontalAlignment="Left" Margin="288,183,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button Content="Перевірити" Name="buttonNum" Click="buttonNum_Click"  HorizontalAlignment="Left" Margin="288,218,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button Content="Перевірити" Name="buttonUkr" Click="buttonUkr_Click"  HorizontalAlignment="Left" Margin="288,254,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button Content="Перевірити" Name="buttonTime" Click="buttonTime_Click" HorizontalAlignment="Left" Margin="288,284,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button Content="Перевірити" Name="buttonEmail" Click="buttonEmail_Click"  HorizontalAlignment="Left" Margin="288,314,0,0" VerticalAlignment="Top" Width="75"/>
+        <Label Content="" Name="labelTel" HorizontalAlignment="Left" Margin="368,146,0,0" VerticalAlignment="Top" Width="75"/>
+        <Label Content="" Name="labelPass" HorizontalAlignment="Left" Margin="368,180,0,0" VerticalAlignment="Top" Width="75"/>
+        <Label Content="" Name="labelNum" HorizontalAlignment="Left" Margin="368,215,0,0" VerticalAlignment="Top" Width="75"/>
+        <Label Content="" Name="labelUkr" HorizontalAlignment="Left" Margin="368,251,0,0" VerticalAlignment="Top" Width="75"/>
+        <Label Content="" Name="labelTime" HorizontalAlignment="Left" Margin="368,282,0,0" VerticalAlignment="Top" Width="75"/>
+        <Label Content="" Name="labelEmail" HorizontalAlignment="Left" Margin="368,310,0,0" VerticalAlignment="Top" Width="75"/>
+    </Grid>
+</Window>
